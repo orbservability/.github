@@ -26,7 +26,7 @@
 
 - **Runtime Analysis**
 
-    Provide a real-world view of active code paths and accurately identify "cruft" that can be safely removed once compared with static code analysis.
+    Monitor active code paths and accurately identify "cruft" that can be safely removed once compared with static code analysis.
   
 - **Automated Observability**
 
