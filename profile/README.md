@@ -6,27 +6,27 @@
 
 ### Features
 
-- Deep Dive Into Relationships
+- **Deep Dive Into Relationships**
 
     Understand the intricate relationships between functions, methods, and services in your application.
   
-- Time Series Analysis
+- **Time Series Analysis**
 
     Track key metrics such as latency, error rate, and call frequency over time to identify trends, spikes, or anomalies.
   
-- Optimized Storage
+- **Optimized Storage**
 
     Utilize the strengths of specialized databases: graph databases for structural representation and time series databases for timestamped metrics.
   
-- Interactive Visualization
+- **Interactive Visualization**
 
     Visualize both the structure of your call graph and the evolution of metrics over time in one cohesive interface.
 
-- Runtime Analysis
+- **Runtime Analysis**
 
     Provide a real-world view of active code paths and accurately identify "cruft" that can be safely removed once compared with static code analysis.
   
-- Automated Observability
+- **Automated Observability**
 
     Achieve comprehensive observability without the hassle of manual instrumentation.
 
