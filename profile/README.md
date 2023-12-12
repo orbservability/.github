@@ -30,7 +30,7 @@
   
 - **Automated Observability**
 
-    Achieve comprehensive observability without the hassle of manual instrumentation.
+    Utilizing cutting edge eBPF, achieve comprehensive observability without the hassle of manual instrumentation.
 
 ### Value
 
@@ -40,4 +40,4 @@ In today's complex software landscape, understanding how different parts of your
 
 ### Helm
 
-[charts](https://github.com/orbservability/helm-charts)
+Install the eBPF based [chart](https://github.com/orbservability/helm-charts/tree/main/charts/observer) into your Kubernetes cluster.
