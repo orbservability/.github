@@ -40,5 +40,5 @@ jobs:
         tags: ${{ steps.meta.outputs.tags }}
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
-          GITHUB_ACTOR: ${{ github.actor }}
-          GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
+          GITHUB_ACTOR=${{ github.actor }}
+          GITHUB_TOKEN=${{ secrets.CI_TOKEN }}
