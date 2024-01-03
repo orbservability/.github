@@ -30,6 +30,10 @@ jobs:
         registry: ghcr.io
         username: ${{ github.actor }}
         password: ${{ github.token }}
+    - name: Check token length
+      run: echo "Token length:${#GITHUB_TOKEN}"
+      env:
+        GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
     - name: Build and push
       uses: docker/build-push-action@v5
       with:
@@ -40,4 +44,4 @@ jobs:
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
           GITHUB_ACTOR=${{ github.actor }}
-          GITHUB_TOKEN=${{ secrets.CI_TOKEN }}
+          GITHU_TOKEN=${{ secrets.CI_TOKEN }}
