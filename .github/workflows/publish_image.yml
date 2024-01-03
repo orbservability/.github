@@ -1,10 +1,9 @@
 on:
   workflow_call:
-    inputs:
+    secrets:
       githubToken:
         description: GitHub Token
         required: true
-        type: string
 
 name: Publish Image
 
@@ -49,4 +48,4 @@ jobs:
         labels: ${{ steps.meta.outputs.labels }}
         build-args: |
           GITHUB_ACTOR=${{ github.actor }}
-          GITHUB_TOKEN=${{ inputs.githubToken }}
+          GITHUB_TOKEN=${{ secrets.githubToken }}
