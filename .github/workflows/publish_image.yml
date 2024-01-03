@@ -3,7 +3,7 @@ on:
     secrets:
       githubToken:
         description: GitHub Token
-        required: true
+        required: false
 
 name: Publish Image
 
