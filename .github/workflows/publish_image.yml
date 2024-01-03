@@ -33,6 +33,8 @@ jobs:
         password: ${{ github.token }}
     - name: Build and push
       uses: docker/build-push-action@v5
+      env:
+        GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
       with:
         context: .
         platforms: linux/amd64,linux/arm64
