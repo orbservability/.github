@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.githubToken }}
+          submodules: true
       - uses: actions/setup-java@v4
         with:
           java-version: '17'
