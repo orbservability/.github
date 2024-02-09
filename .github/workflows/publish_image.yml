@@ -16,6 +16,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        submodules: true
     - name: Extract metadata for the Docker image
       id: meta
       uses: docker/metadata-action@v5
