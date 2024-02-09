@@ -7,10 +7,6 @@ on:
 
 name: Publish Jar
 
-permissions:
-  contents: read
-  packages: write
-
 jobs:
   scala:
     runs-on: ubuntu-latest
